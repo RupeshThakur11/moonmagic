@@ -1,0 +1,24 @@
+{
+  "name": "meetingplanner",
+  "version": "1.0.0",
+  "description": "Backend Code for MLM App.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rupesh",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.4",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.0",
+    "moment": "^2.24.0",
+    "mongoose": "^5.4.19",
+    "mongoose-express-generator": "^3.1.0",
+    "morgan": "^1.9.1",
+    "nodemailer": "^5.1.1",
+    "shortid": "^2.2.14"
+  }
+}
