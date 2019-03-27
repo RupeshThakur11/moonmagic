@@ -1,17 +1,16 @@
-'use strict'
 
-let trim = (x)=>{
-    let value = String(x);
-    return value.replace(/^\s+|\s+$/gm,'');
-}
-let isEmpty = (value)=>{
-    if(value === null || value === undefined || trim(value) === '' || value.length === 0){
-        return true;
-    }else{
-        return false;
-    }
-}
+
+const trim = (x) => {
+  const value = String(x);
+  return value.replace(/^\s+|\s+$/gm, '');
+};
+const isEmpty = (value) => {
+  if (value === null || value === undefined || trim(value) === '' || value.length === 0) {
+    return true;
+  }
+  return false;
+};
 // console.log(isEmpty())
 module.exports = {
-    isEmpty
-}
+  isEmpty,
+};

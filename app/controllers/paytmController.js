@@ -1,6 +1,6 @@
 const {
   initPayment,
-  responsePayment
+  responsePayment,
 } = require('./../middlewares/index');
 const config = require('./../../Config/appConfig');
 
@@ -16,14 +16,14 @@ module.exports.initPayment = (req, res) => {
       res.send(error);
     },
   );
-}
+};
 module.exports.paywithpaytmresponse = (req, res) => {
   responsePayment(req.body).then(
     (success) => {
-      res.render('./../app/views/response.ejs', {resultData: 'true', responseData: success});
+      res.render('./../app/views/response.ejs', { resultData: 'true', responseData: success });
     },
     (error) => {
       res.send(error);
     },
   );
-}
+};
